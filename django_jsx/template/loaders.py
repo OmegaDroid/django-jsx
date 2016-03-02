@@ -2,7 +2,10 @@
 Return only the file path
 """
 from os.path import exists
-from django.template.base import TemplateDoesNotExist
+try:
+    from django.template.base import TemplateDoesNotExist
+except ImportError:
+    from django.template import TemplateDoesNotExist
 from django.template.loaders.filesystem import Loader
 
 
@@ -10,7 +13,7 @@ class JsLoader(Loader):
     def load_template_source(self, template_name, template_dirs=None):
         tried = []
         for filepath in self.get_template_sources(template_name, template_dirs):
-            if exists(filepath):
+            if exists(str(filepath)):
                 return filepath, None
             else:
                 tried.append(filepath)

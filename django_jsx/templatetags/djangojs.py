@@ -23,7 +23,7 @@ def _get_template_path(template_name):
     if not template_dirs:
         return None
     template_path, _ = loader.load_template(template_name, template_dirs=template_dirs)
-    return template_path
+    return str(template_path)
 
 
 @register.simple_tag(takes_context=True)

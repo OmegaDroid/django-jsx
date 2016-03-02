@@ -27,6 +27,8 @@ var _nav = require('./nav');
 var _nav2 = _interopRequireDefault(_nav);
 
 var Form = (function (_React$Component) {
+    _inherits(Form, _React$Component);
+
     function Form(props) {
         _classCallCheck(this, Form);
 
@@ -34,8 +36,6 @@ var Form = (function (_React$Component) {
         this.state = props;
         this.submitForm = this.submitForm.bind(this);
     }
-
-    _inherits(Form, _React$Component);
 
     _createClass(Form, [{
         key: 'submitForm',

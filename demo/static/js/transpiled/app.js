@@ -23,6 +23,8 @@ var _routers = require('./routers');
 var _routers2 = _interopRequireDefault(_routers);
 
 var App = (function (_React$Component) {
+    _inherits(App, _React$Component);
+
     function App(props) {
         _classCallCheck(this, App);
 
@@ -33,8 +35,6 @@ var App = (function (_React$Component) {
         // Get the initial path name from the server side request
         this.state = { pathname: props._request.path || '/' };
     }
-
-    _inherits(App, _React$Component);
 
     _createClass(App, [{
         key: 'componentDidMount',

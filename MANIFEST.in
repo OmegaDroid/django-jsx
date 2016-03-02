@@ -1,5 +1,6 @@
 recursive-include django_jsx/static *
 recursive-include django_jsx/templates *
+recursive-include django_jsx/server/javascript *
 recursive-exclude django_jsx/static/django_jsx/js/node_modules *
 include README.md
 include setup.cfg

@@ -12,7 +12,8 @@ class TemplateServer():
     def get_cwd(self):
         pth = os.path.join(
             os.path.dirname(__file__),
-            '../../javascript/dist/'
+            'javascript',
+            'dist',
         )
         return pth
 

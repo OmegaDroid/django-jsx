@@ -23,13 +23,13 @@ var _app = require("./app");
 var _app2 = _interopRequireDefault(_app);
 
 var Base = (function (_React$Component) {
+    _inherits(Base, _React$Component);
+
     function Base(props) {
         _classCallCheck(this, Base);
 
         _get(Object.getPrototypeOf(Base.prototype), "constructor", this).call(this, props);
     }
-
-    _inherits(Base, _React$Component);
 
     _createClass(Base, [{
         key: "stringify",

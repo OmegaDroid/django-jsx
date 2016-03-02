@@ -19,13 +19,13 @@ var _react = require("react");
 var _react2 = _interopRequireDefault(_react);
 
 var Nav = (function (_React$Component) {
+    _inherits(Nav, _React$Component);
+
     function Nav(props) {
         _classCallCheck(this, Nav);
 
         _get(Object.getPrototypeOf(Nav.prototype), "constructor", this).call(this, props);
     }
-
-    _inherits(Nav, _React$Component);
 
     _createClass(Nav, [{
         key: "render",

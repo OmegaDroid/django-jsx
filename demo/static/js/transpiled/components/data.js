@@ -27,6 +27,8 @@ var _nav = require('./nav');
 var _nav2 = _interopRequireDefault(_nav);
 
 var Data = (function (_React$Component) {
+    _inherits(Data, _React$Component);
+
     function Data(props) {
         _classCallCheck(this, Data);
 
@@ -34,8 +36,6 @@ var Data = (function (_React$Component) {
         this.state = props;
         this.click = this.click.bind(this);
     }
-
-    _inherits(Data, _React$Component);
 
     _createClass(Data, [{
         key: 'componentDidMount',

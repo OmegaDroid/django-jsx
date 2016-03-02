@@ -23,14 +23,14 @@ var _nav = require('./nav');
 var _nav2 = _interopRequireDefault(_nav);
 
 var Home = (function (_React$Component) {
+    _inherits(Home, _React$Component);
+
     function Home(props) {
         _classCallCheck(this, Home);
 
         _get(Object.getPrototypeOf(Home.prototype), 'constructor', this).call(this, props);
         this.state = props;
     }
-
-    _inherits(Home, _React$Component);
 
     _createClass(Home, [{
         key: 'render',
