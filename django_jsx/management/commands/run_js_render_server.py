@@ -13,7 +13,7 @@ class Command(BaseCommand):
         self.server = TemplateServer()
 
     def handle(self, *args, **options):
-        atexit.register(self.server.terminate())
+        atexit.register(self.server.terminate)
         self.server.start()
 
         while True: sleep(1)
